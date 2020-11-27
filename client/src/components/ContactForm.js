@@ -17,7 +17,7 @@ const ContactForm = () => {
         axios
             .post('/send', { ...state })
             .then(response => {
-                console.log(response)
+                
                 setResult(response.data);
                 setState({ name: '', email: '', subject: '', message: '' });
             })
